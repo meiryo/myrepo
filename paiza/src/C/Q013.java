@@ -23,7 +23,7 @@ public class Q013 {
 		}
 
 		if (hitCount == 0) {
-			System.out.println("none");
+			System.out.println("none"); //$NON-NLS-1$
 		} else {
 			for (int j = 0; j < roomCount; j++) {
 				if (rooms[j] != null) {

@@ -13,17 +13,17 @@ public class Q015 {
 		int max = Integer.parseInt(target);
 		String[][] rog = new String[max][];
 		for (int i = 0; i < max; i++) {
-			rog[i] = br.readLine().split(" ");
+			rog[i] = br.readLine().split(" "); //$NON-NLS-1$
 		}
 
 		int point = 0;
 		for (int i = 0; i < max; i++) {
-			if (rog[i][0].indexOf("5") != -1) {
+			if (rog[i][0].indexOf("5") != -1) { //$NON-NLS-1$
 				int cal = (int) (Integer.parseInt(rog[i][1]) * 0.05);
 				point += cal;
 				continue;
 			}
-			if (rog[i][0].indexOf("3") != -1) {
+			if (rog[i][0].indexOf("3") != -1) { //$NON-NLS-1$
 				int cal = (int) (Integer.parseInt(rog[i][1]) * 0.03);
 				point += cal;
 				continue;

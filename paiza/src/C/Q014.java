@@ -7,16 +7,16 @@ import java.io.InputStreamReader;
 public class Q014 {
 	public static void main(String[] args) throws IOException {
 
-		System.out.println("入力してください。");
+		System.out.println("入力してください。"); //$NON-NLS-1$
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line = br.readLine();
-		String[] readLineArray = line.split(" ");
+		String[] readLineArray = line.split(" "); //$NON-NLS-1$
 
 		int boxCount = Integer.parseInt(readLineArray[0]);
 		int r = Integer.parseInt(readLineArray[1]);
 		String[][] box = new String[boxCount][];
 		for (int i = 0; i < boxCount; i++) {
-			box[i] = br.readLine().split(" ");
+			box[i] = br.readLine().split(" "); //$NON-NLS-1$
 		}
 
 		for (int i = 0; i < boxCount; i++) {
